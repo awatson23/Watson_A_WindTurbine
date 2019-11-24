@@ -5,6 +5,7 @@ var controller = new ScrollMagic.Controller();
 var welcomePin = new ScrollMagic.Scene({
     triggerElement: '#welcomeSpace',
     triggerHook: 0,
+    duration: '90%'
   })
   .setPin('#welcome')
     .addTo(controller);
@@ -33,3 +34,11 @@ var sectionPin3 = new ScrollMagic.Scene({
     })
     .setPin('#section-3')
     .addTo(controller);
+
+    var sectionPin4 = new ScrollMagic.Scene({
+        triggerElement: '#section-4',
+            triggerHook: 0,
+            duration: '90%'
+        })
+        .setPin('#section-4')
+        .addTo(controller);
