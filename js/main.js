@@ -1,44 +1,12 @@
-/*Here lies javascript*/
+//button One
 
-var controller = new ScrollMagic.Controller();
+var button = document.getElementById("S2btn-1"),
+    S2details = document.getElementById("S2info");
 
-var welcomePin = new ScrollMagic.Scene({
-    triggerElement: '#welcomeSpace',
-    triggerHook: 0,
-    duration: '90%'
-  })
-  .setPin('#welcome')
-    .addTo(controller);
-
-
-var sectionPin1 = new ScrollMagic.Scene({
-    triggerElement: '#section-1',
-        triggerHook: 0,
-        duration: '90%'
-    })
-    .setPin('#section-1')
-    .addTo(controller);
-
-var sectionPin2 = new ScrollMagic.Scene({
-    triggerElement: '#section-2',
-        triggerHook: 0,
-        duration: '90%'
-    })
-    .setPin('#section-2')
-    .addTo(controller);
-
-var sectionPin3 = new ScrollMagic.Scene({
-    triggerElement: '#section-3',
-        triggerHook: 0,
-        duration: '90%'
-    })
-    .setPin('#section-3')
-    .addTo(controller);
-
-    var sectionPin4 = new ScrollMagic.Scene({
-        triggerElement: '#section-4',
-            triggerHook: 0,
-            duration: '90%'
-        })
-        .setPin('#section-4')
-        .addTo(controller);
+button.addEventListener("click", function(){
+  if (S2details.style.display == 'none') {
+    S2details.style.display = 'block';
+  } else {
+    S2details.style.display = 'none';
+  }
+}, false);

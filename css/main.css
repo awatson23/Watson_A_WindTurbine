@@ -2,6 +2,7 @@
 
 h2, p {
     font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 
 /* welcome section */
@@ -60,6 +61,24 @@ h2, p {
     position: absolute;
 }
 
+#section2Bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#section2Bg-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 5s ease-in; 
+}
+
+#section2Bg-1.scroll-anim {
+    opacity: .6;
+}
+
 #secondaryImageDiv-s1 {
     position: absolute;
     bottom: 7%;
@@ -71,6 +90,59 @@ h2, p {
 }
 
 #secondaryImage-s1 {
+    width: 100%;
+    height: 100%;
+}
+
+#S2info-t {
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 8%;
+    margin-left: 30%;
+}
+
+#S2info {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    right: 0%;
+}
+
+#S2info-p {
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#S2btn-1 {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    left: 20%;
+    bottom: 41%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#S2btn-1:hover {
+    background-color: white;
+}
+
+#secondaryImageDiv-s2 {
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    width: 21%;
+    z-index: 1;
+    background-color: white;
+    padding: .3%;
+}
+
+#secondaryImage-s2 {
     width: 100%;
     height: 100%;
 }

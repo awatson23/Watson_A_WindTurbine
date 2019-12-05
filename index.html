@@ -17,7 +17,7 @@
     <div id="videoOverlay"></div>
     <div id="videoDiv">
       <video width="100%" height="100%" autoplay muted loop>
-        <source src="assets/turbines.mp4" type="video/mp4">
+        <source src="assets/backgroundVid.mp4" type="video/mp4">
       </video> 
     </div>
   </section>
@@ -28,12 +28,20 @@
       <div id="secondaryImageDiv-s1">
         <img id="secondaryImage-s1" src="assets/wingyaw.jpg">
       </div>
-      <!-- <div class="infoDiv"></div> -->
   </section>
 
 
   <section id="section-2">
-    <div class="infoDiv"></div>
+      <img id="section2Bg" src="assets/render6.jpg">
+      <img id="section2Bg-1" src="assets/render7.jpg">
+      <div id="S2info">
+          <p id="S2info-t">Rotator</p>
+        <video id="secondaryImageDiv-s2" autoplay muted loop>
+          <source src="assets/render8_1.mp4" id="secondaryImage-s2" type="video/mp4">
+        </video>
+        <p id="S2info-p">Here there will be info</p>
+      </div>
+      <button id="S2btn-1"></button>
   </section>
 
 
@@ -46,11 +54,12 @@
   </section>
 
     <!-- Links to javascript and libraries -->
+    <script src="js/main.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/TweenMax.min.js"></script>   
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/animation.gsap.min.js"></script>
     <script src="js/jquery.ScrollMagic.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/scrollmagicFunctions.js"></script>
 </body>
 </html>
