@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+   
     <title>Wind Turbine</title>
 </head>
 <body>
   <section id="welcome">
-    
+    <div id="welcomeBanner"></div>
       <h2 class="title" id="harnessing">Harnessing the power of the wind</h2>
+      <h2 id="harnessing-2">Discover the engineering mastery of the modern day wind turbine</h2>
+      <a id="discover" href="#section-2"></a>
     
-    <div id="videoOverlay"></div>
+   
     <div id="videoDiv">
       <video width="100%" height="100%" autoplay muted loop>
         <source src="assets/backgroundVid.mp4" type="video/mp4">
@@ -23,34 +26,75 @@
   </section>
 
 
-  <section id="section-1">
-      <img id="section1Bg" src="assets/wing.jpg">
-      <div id="secondaryImageDiv-s1">
-        <img id="secondaryImage-s1" src="assets/wingyaw.jpg">
-      </div>
-  </section>
-
-
   <section id="section-2">
-      <img id="section2Bg" src="assets/render6.jpg">
-      <img id="section2Bg-1" src="assets/render7.jpg">
+      <!--<img id="section2Bg" src="assets/render26.jpg">-->
+      
+      <!--<img id="section2Bg-1" src="assets/render27.jpg">-->
+      <video width="100%" autoplay muted loop>
+        <source src="assets/rendervideoBG2.mp4" id="section2Bg" type="video/mp4">
+      </video> 
       <div id="S2info">
-          <p id="S2info-t">Rotator</p>
-        <video id="secondaryImageDiv-s2" autoplay muted loop>
-          <source src="assets/render8_1.mp4" id="secondaryImage-s2" type="video/mp4">
+        <!-- first button -->
+        <div id="S2info-1">
+          <p id="exit">X</p>
+        <video class="secondaryImageDiv-s2" autoplay muted loop>
+          <source src="assets/render20.mp4" id="secondaryImage-s2" type="video/mp4">
         </video>
-        <p id="S2info-p">Here there will be info</p>
+        <p class="S2info-t">Shaft</p>
+          <p class="S2info-p">When the wing rotors spin, so does the shaft. This is how the rotational energy begins it’s transference into the generator.</p>
       </div>
+          
+        <div id="S2info-2">
+          <p id="exit">X</p>
+          <video class="secondaryImageDiv-s2" autoplay muted loop>
+              <source src="assets/render20.mp4" id="secondaryImage-s2" type="video/mp4">
+            </video>
+            <p class="S2info-t">Gear Box</p>
+              <p class="S2info-p">The gearbox aids in increasing rotational speed. It allows for control of the torque and speed.</p>
+          </div>
+
+          <div id="S2info-3">
+              <p id="exit">X</p>
+            <video class="secondaryImageDiv-s2" autoplay muted loop>
+                <source src="assets/render20.mp4" id="secondaryImage-s2" type="video/mp4">
+              </video>
+              <p class="S2info-t">Generator</p>
+                <p class="S2info-p">The generator transfers the electromagnetic induction through a coiled wire connected to a series of magnets and feeds it’s through connected power lines.</p>
+            </div>
+            
+            <div id="S2info-4">
+                <p id="exit">X</p>
+              <video class="secondaryImageDiv-s2" autoplay muted loop>
+                  <source src="assets/render5vid.mp4" id="secondaryImage-s2" type="video/mp4">
+                </video>
+                <p class="S2info-t">Yaw</p>
+                  <p class="S2info-p">Allows for twisting the turbine to suit the direction of the wind through the turning of gears</p>
+              </div>
+              
+              <div id="S2info-5">
+                  <p id="exit">X</p>
+                <video class="secondaryImageDiv-s2" autoplay muted loop>
+                    <source src="assets/rendertilt.mp4" id="secondaryImage-s2" type="video/mp4">
+                  </video>
+                  <p class="S2info-t">Wing rotor</p>
+                    <p class="S2info-p">The wings rotate with the pure force of the wind.</p>
+                </div>
+      </div>
+    </div>
       <button id="S2btn-1"></button>
+      <button id="S2btn-2"></button>
+      <button id="S2btn-3"></button>
+      <button id="S2btn-4"></button>
+      <button id="S2btn-5"></button>
   </section>
 
 
   <section id="section-3">
-    <div class="infoDiv"></div>
+   <div id="infoDiv"></div>
   </section>
 
   <section id="section-4">
-    <div class="infoDiv"></div>
+    <div id="infoDiv2"></div>
   </section>
 
     <!-- Links to javascript and libraries -->
