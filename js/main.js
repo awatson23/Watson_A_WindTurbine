@@ -45,10 +45,16 @@ button5.addEventListener("click", function(){
 
 //exit button
 
-exit = document.getElementById("exit");
+exits = document.querySelectorAll(".exits");
 
-exit.addEventListener("click", function(){
+function closeBox() {
     S2details.style.display ='none';
     S22details.style.display = 'none';
+    S23details.style.display = 'none';
+    S24details.style.display = 'none';
+    S25details.style.display = 'none';
+  }
   
-});
+  for(var i = 0; i < exits.length; i++) {
+    exits[i].addEventListener('click', closeBox, false);
+  }  

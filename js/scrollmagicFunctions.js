@@ -11,14 +11,6 @@ var welcomePin = new ScrollMagic.Scene({
     .addTo(controller);
 
 
-var sectionPin1 = new ScrollMagic.Scene({
-    triggerElement: '#section-1',
-        triggerHook: 0,
-        duration: '60%'
-    })
-    .setPin('#section-1')
-    .addTo(controller);
-
 var sectionPin2 = new ScrollMagic.Scene({
     triggerElement: '#section-2',
         triggerHook: 0,
@@ -27,27 +19,26 @@ var sectionPin2 = new ScrollMagic.Scene({
     .setPin('#section-2')
     .addTo(controller);
 
-var sectionPin3 = new ScrollMagic.Scene({
-    triggerElement: '#section-3',
-        triggerHook: 0,
-        duration: '90%'
-    })
-    .setPin('#section-3')
-    .addTo(controller);
 
-    var sectionPin4 = new ScrollMagic.Scene({
-        triggerElement: '#section-4',
-            triggerHook: 0,
-            duration: '90%'
+
+
+    var info1 = new ScrollMagic.Scene({
+        triggerElement: '#infoDiv1',
+        triggerHook: .7,
         })
-        .setPin('#section-4')
+        .setClassToggle('#infoDiv1', 'scroll-anim')
         .addTo(controller);
 
-//section 2 image switch
+    var info2 = new ScrollMagic.Scene({
+        triggerElement: '#infoDiv2',
+        triggerHook: .7,
+        })
+        .setClassToggle('#infoDiv2', 'scroll-anim')
+        .addTo(controller);
 
-var section2BG = new ScrollMagic.Scene({
-    triggerElement: '#section2Bg-1',
-    triggerHook: 0,
-    })
-    .setClassToggle('#section2Bg-1', 'scroll-anim')
-    .addTo(controller);
+    var info3 = new ScrollMagic.Scene({
+        triggerElement: '#infoDiv3',
+        triggerHook: .7,
+        })
+        .setClassToggle('#infoDiv3', 'scroll-anim')
+        .addTo(controller);
