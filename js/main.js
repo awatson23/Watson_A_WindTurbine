@@ -45,6 +45,8 @@ button5.addEventListener("click", function(){
 
 //exit button
 
+S2welcome = document.getElementById("S2welcome");
+
 exits = document.querySelectorAll(".exits");
 
 function closeBox() {
@@ -53,6 +55,7 @@ function closeBox() {
     S23details.style.display = 'none';
     S24details.style.display = 'none';
     S25details.style.display = 'none';
+    S2welcome.style.display = 'none';
   }
   
   for(var i = 0; i < exits.length; i++) {
