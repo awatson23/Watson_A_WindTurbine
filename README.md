@@ -1,1 +1,0 @@
-# Watson_A_WindTurbine
